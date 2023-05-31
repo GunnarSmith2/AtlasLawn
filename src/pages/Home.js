@@ -4,7 +4,7 @@ import Link from "next/link";
 // Picture
 import Hero from "../Assets/hero.jpg";
 import HeroMobile from "../Assets/HeroMobile.jpg";
-import LawnMaintenance from "../Assets/lawn1.JPEG";
+import LawnMaintenance from "../Assets/lawn1.jpg";
 import LeafRemoval from "../Assets/leaf-removal.jpg";
 import MulchMaintenance from "../Assets/lawn4.jpg";
 import PropertyCleanup from "../Assets/lawn3.jpg";
