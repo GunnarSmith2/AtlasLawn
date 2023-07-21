@@ -46,21 +46,18 @@ function Contact() {
             className="flex flex-col space-y-2 mx-auto mt-20"
             style={{ maxWidth: "90vw" }}
           >
-            <div className="flex space-x-2">
-              <input
-                {...register("name")}
-                className="contactInput"
-                placeholder="Name"
-                type="text"
-              />
-              <input
-                {...register("email")}
-                className="contactInput"
-                placeholder="Email"
-                type="email"
-              />
-            </div>
-
+            <input
+              {...register("name")}
+              className="contactInput"
+              placeholder="Name"
+              type="text"
+            />
+            <input
+              {...register("email")}
+              className="contactInput"
+              placeholder="Email"
+              type="email"
+            />
             <input
               {...register("subject")}
               className="contactInput"
