@@ -43,7 +43,8 @@ function Contact() {
 
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="flex flex-col space-y-2 mx-auto mt-20 w-screen"
+            className="flex flex-col space-y-2 mx-auto mt-20"
+            style={{ maxWidth: "90vw" }}
           >
             <div className="flex space-x-2">
               <input
