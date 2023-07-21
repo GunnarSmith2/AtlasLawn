@@ -21,11 +21,10 @@ function Contact() {
       <div className="bg-black w-fit">
         <Navbar />
         <div className="flex relative flex-col h-screen text-center md:text-center md:flex-col justify-center items-center">
-          <h3 className="absolute top-2 text-white text-3xl">Contact Us</h3>
-          <p className="absolute top-14 text-white text-base">
-            Get a free estimate now
-          </p>
+          <h3 className="text-white text-3xl">Contact Us</h3>
+          <p className="text-white text-base">Get a free estimate now</p>
 
+          {/* Container for the phone number */}
           <div className="absolute top-24 mt-4 border-2 bg-slate-600 rounded-md flex flex-col space-y-6 space-x-10 py-2 md:p-6 md:max-w-lg">
             <div className="flex items-center space-x-5 justify-center">
               <PhoneIcon className="text-[#63e5ff] h-7 w-7 animate-pulse" />
@@ -43,6 +42,7 @@ function Contact() {
             </div>
           </div>
 
+          {/* Container for the form */}
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col space-y-2 mx-auto mt-20 w-fit"
