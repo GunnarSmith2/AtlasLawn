@@ -18,15 +18,13 @@ function Contact() {
 
   return (
     <>
-      <div className="bg-black sm:w-screen">
+      <div className="bg-black">
         <Navbar />
-        <div className="flex relative flex-col h-screen text-center md:text-center md:flex-col justify-center items-center mb-7">
-          <h3 className="absolute top-2 text-white text-3xl">Contact Us</h3>
-          <p className="absolute top-14 text-white text-base">
-            Get a free estimate now
-          </p>
+        <div className="flex flex-col h-screen text-center md:text-center md:flex-col justify-center items-center">
+          <h3 className="text-white text-3xl">Contact Us</h3>
+          <p className="text-white text-base mb-10">Get a free estimate now</p>
 
-          <div className="absolute top-24 mt-4 border-2 bg-slate-600 rounded-md flex flex-col space-y-6 space-x-10 py-2 md:p-6 md:max-w-lg">
+          <div className="mt-4 border-2 bg-slate-600 rounded-md flex flex-col space-y-6 space-x-10 py-2 md:p-6 md:max-w-lg">
             <div className="flex items-center space-x-5 justify-center">
               <PhoneIcon className="text-[#63e5ff] h-7 w-7 animate-pulse" />
               <p className="text-xl text-white">(830)-837-3949</p>
