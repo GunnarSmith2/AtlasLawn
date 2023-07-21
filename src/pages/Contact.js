@@ -18,7 +18,7 @@ function Contact() {
 
   return (
     <>
-      <div className="bg-black">
+      <div className="bg-black w-fit">
         <Navbar />
         <div className="flex relative flex-col h-screen text-center md:text-center md:flex-col justify-center items-center">
           <h3 className="absolute top-2 text-white text-3xl">Contact Us</h3>
@@ -45,7 +45,7 @@ function Contact() {
 
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="flex flex-col space-y-2 mx-auto mt-4 w-full"
+            className="flex flex-col space-y-2 mx-auto mt-20 w-fit"
           >
             <div className="flex space-x-2">
               <input
