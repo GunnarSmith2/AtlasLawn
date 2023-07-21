@@ -43,7 +43,7 @@ function Contact() {
 
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="flex flex-col space-y-2 mx-auto mt-20 md:w-3/4 lg:w-1/2 xl:w-1/3"
+            className="flex flex-col space-y-2 mx-auto mt-5 md:w-3/4 lg:w-1/2 xl:w-1/3"
           >
             <input
               {...register("name")}
