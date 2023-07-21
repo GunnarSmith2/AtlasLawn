@@ -18,9 +18,9 @@ function Contact() {
 
   return (
     <>
-      <div className="bg-black">
+      <div className="bg-black sm:w-screen">
         <Navbar />
-        <div className="flex relative flex-col h-screen text-center md:text-center md:flex-col justify-center items-center">
+        <div className="flex relative flex-col h-screen text-center md:text-center md:flex-col justify-center items-center mb-7">
           <h3 className="absolute top-2 text-white text-3xl">Contact Us</h3>
           <p className="absolute top-14 text-white text-base">
             Get a free estimate now
