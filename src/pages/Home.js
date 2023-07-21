@@ -129,7 +129,9 @@ function Home() {
                     <h3 className="text-lg font-bold mb-2 text-white text-center">
                       {service.title}
                     </h3>
-                    <p className="text-white">{service.description}</p>
+                    <p className="text-white text-center">
+                      {service.description}
+                    </p>
                   </div>
                 </div>
               </div>

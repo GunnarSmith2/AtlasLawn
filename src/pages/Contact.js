@@ -1,5 +1,4 @@
 import Navbar from "@/components/navbar";
-import { data } from "autoprefixer";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
@@ -17,60 +16,13 @@ function Contact() {
     window.location.href = `mailto:atlaslawnservicesnb@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message}`;
   };
 
-  /* handleSubmit = async (e) => {
-    e.preventDefault();
-    const {
-      firstName,
-      lastName,
-      address,
-      city,
-      state,
-      postalCode,
-      email,
-      phone,
-      services,
-    } = formData;
-    const body = {
-      firstName,
-      lastName,
-      address,
-      city,
-      state,
-      postalCode,
-      email,
-      phone,
-      services,
-    };
-
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(body),
-    });
-    if (res.status === 200) {
-      alert("Message sent Successfully!");
-    } else {
-      alert("Error sending message.");
-    }
-  };
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [name]: value,
-    }));
-  }; */
-
   return (
     <>
-      <div className=" bg-black ">
+      <div className="bg-black">
         <Navbar />
         <div className="flex relative flex-col h-screen text-center md:text-center md:flex-col justify-center items-center">
-          <h3 className=" absolute top-2 text-white text-3xl">Contact Us</h3>
-          <p className=" absolute top-14 text-white text-base">
+          <h3 className="absolute top-2 text-white text-3xl">Contact Us</h3>
+          <p className="absolute top-14 text-white text-base">
             Get a free estimate now
           </p>
 
@@ -93,7 +45,7 @@ function Contact() {
 
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="flex flex-col space-y-2 w-fit mx-auto mt-4"
+            className="flex flex-col space-y-2 mx-auto mt-4 w-full"
           >
             <div className="flex space-x-2">
               <input
@@ -124,7 +76,7 @@ function Contact() {
             />
             <button
               type="submit"
-              className="bg-[#63e5ff] py-5 px-10 rounded-md text-black font-bold text- uppercase"
+              className="bg-[#63e5ff] py-5 px-10 rounded-md text-black font-bold text-uppercase"
             >
               Submit
             </button>
